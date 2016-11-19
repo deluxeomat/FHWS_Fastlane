@@ -12,7 +12,22 @@
 		12E5289B1DDFA9CB00ACCECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E528991DDFA9CB00ACCECB /* Main.storyboard */; };
 		12E5289D1DDFA9CB00ACCECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E5289C1DDFA9CB00ACCECB /* Assets.xcassets */; };
 		12E528A01DDFA9CB00ACCECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E5289E1DDFA9CB00ACCECB /* LaunchScreen.storyboard */; };
+		12E528A81DDFAC3C00ACCECB /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E528A71DDFAC3C00ACCECB /* background.png */; };
+		12E528AB1DDFB1F800ACCECB /* MegaApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E528AA1DDFB1F800ACCECB /* MegaApp.png */; };
+		12E528AE1DDFB37D00ACCECB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E528AD1DDFB37D00ACCECB /* QuartzCore.framework */; };
+		12E528B61DDFC5A400ACCECB /* MegaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E528B51DDFC5A400ACCECB /* MegaAppTests.swift */; };
+		12E528C01DE07FD200ACCECB /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E528BF1DE07FD200ACCECB /* Calc.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12E528B81DDFC5A400ACCECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E5288A1DDFA9CB00ACCECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12E528911DDFA9CB00ACCECB;
+			remoteInfo = MegaApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		12E528921DDFA9CB00ACCECB /* MegaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +37,25 @@
 		12E5289C1DDFA9CB00ACCECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E5289F1DDFA9CB00ACCECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12E528A11DDFA9CB00ACCECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E528A71DDFAC3C00ACCECB /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		12E528AA1DDFB1F800ACCECB /* MegaApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MegaApp.png; sourceTree = "<group>"; };
+		12E528AD1DDFB37D00ACCECB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		12E528B31DDFC5A400ACCECB /* MegaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E528B51DDFC5A400ACCECB /* MegaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaAppTests.swift; sourceTree = "<group>"; };
+		12E528B71DDFC5A400ACCECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E528BF1DE07FD200ACCECB /* Calc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		12E5288F1DDFA9CB00ACCECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E528AE1DDFB37D00ACCECB /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E528B01DDFC5A400ACCECB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				12E528941DDFA9CB00ACCECB /* MegaApp */,
+				12E528B41DDFC5A400ACCECB /* MegaAppTests */,
 				12E528931DDFA9CB00ACCECB /* Products */,
+				12E528AC1DDFB37C00ACCECB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				12E528921DDFA9CB00ACCECB /* MegaApp.app */,
+				12E528B31DDFC5A400ACCECB /* MegaAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +89,40 @@
 			children = (
 				12E528951DDFA9CB00ACCECB /* AppDelegate.swift */,
 				12E528971DDFA9CB00ACCECB /* ViewController.swift */,
+				12E528BF1DE07FD200ACCECB /* Calc.swift */,
 				12E528991DDFA9CB00ACCECB /* Main.storyboard */,
 				12E5289C1DDFA9CB00ACCECB /* Assets.xcassets */,
 				12E5289E1DDFA9CB00ACCECB /* LaunchScreen.storyboard */,
 				12E528A11DDFA9CB00ACCECB /* Info.plist */,
+				12E528A91DDFAC4400ACCECB /* Images */,
 			);
 			path = MegaApp;
+			sourceTree = "<group>";
+		};
+		12E528A91DDFAC4400ACCECB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				12E528AA1DDFB1F800ACCECB /* MegaApp.png */,
+				12E528A71DDFAC3C00ACCECB /* background.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		12E528AC1DDFB37C00ACCECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12E528AD1DDFB37D00ACCECB /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12E528B41DDFC5A400ACCECB /* MegaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				12E528B51DDFC5A400ACCECB /* MegaAppTests.swift */,
+				12E528B71DDFC5A400ACCECB /* Info.plist */,
+			);
+			path = MegaAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +145,24 @@
 			productReference = 12E528921DDFA9CB00ACCECB /* MegaApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		12E528B21DDFC5A400ACCECB /* MegaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E528BA1DDFC5A400ACCECB /* Build configuration list for PBXNativeTarget "MegaAppTests" */;
+			buildPhases = (
+				12E528AF1DDFC5A400ACCECB /* Sources */,
+				12E528B01DDFC5A400ACCECB /* Frameworks */,
+				12E528B11DDFC5A400ACCECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12E528B91DDFC5A400ACCECB /* PBXTargetDependency */,
+			);
+			name = MegaAppTests;
+			productName = MegaAppTests;
+			productReference = 12E528B31DDFC5A400ACCECB /* MegaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +177,12 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = SGFJR697SR;
 						ProvisioningStyle = Automatic;
+					};
+					12E528B21DDFC5A400ACCECB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SGFJR697SR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 12E528911DDFA9CB00ACCECB;
 					};
 				};
 			};
@@ -115,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				12E528911DDFA9CB00ACCECB /* MegaApp */,
+				12E528B21DDFC5A400ACCECB /* MegaAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +211,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E528A01DDFA9CB00ACCECB /* LaunchScreen.storyboard in Resources */,
+				12E528A81DDFAC3C00ACCECB /* background.png in Resources */,
 				12E5289D1DDFA9CB00ACCECB /* Assets.xcassets in Resources */,
 				12E5289B1DDFA9CB00ACCECB /* Main.storyboard in Resources */,
+				12E528AB1DDFB1F800ACCECB /* MegaApp.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E528B11DDFC5A400ACCECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +232,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E528C01DE07FD200ACCECB /* Calc.swift in Sources */,
 				12E528981DDFA9CB00ACCECB /* ViewController.swift in Sources */,
 				12E528961DDFA9CB00ACCECB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12E528AF1DDFC5A400ACCECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E528B61DDFC5A400ACCECB /* MegaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12E528B91DDFC5A400ACCECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12E528911DDFA9CB00ACCECB /* MegaApp */;
+			targetProxy = 12E528B81DDFC5A400ACCECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		12E528991DDFA9CB00ACCECB /* Main.storyboard */ = {
@@ -281,6 +393,34 @@
 			};
 			name = Release;
 		};
+		12E528BB1DDFC5A400ACCECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SGFJR697SR;
+				INFOPLIST_FILE = MegaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.MegaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MegaApp.app/MegaApp";
+			};
+			name = Debug;
+		};
+		12E528BC1DDFC5A400ACCECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SGFJR697SR;
+				INFOPLIST_FILE = MegaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.MegaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MegaApp.app/MegaApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -300,6 +440,16 @@
 				12E528A61DDFA9CB00ACCECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12E528BA1DDFC5A400ACCECB /* Build configuration list for PBXNativeTarget "MegaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E528BB1DDFC5A400ACCECB /* Debug */,
+				12E528BC1DDFC5A400ACCECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

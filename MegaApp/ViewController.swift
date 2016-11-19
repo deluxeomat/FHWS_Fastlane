@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var image: UIImageView!
+    
+    var myPi: Double!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        button.layer.cornerRadius = 8
+        button.clipsToBounds = true
+        self.myPi = Calc.getPi()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +27,29 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonPressed(_ sender: Any) {
+        image.layer.add(getRotationAnimation(), forKey: nil)
+        
+    }
+    
+    func getRotationAnimation() -> CABasicAnimation {
+        let rotation = CABasicAnimation(keyPath: "transform.rotation")
+        rotation.fromValue = 0.0
+        rotation.toValue = myPi
+        rotation.duration = 1.5
+        
+        return rotation
+    }
+
 
 }
+
+
+
+
+
+
+
+
+
 
