@@ -38,6 +38,16 @@
                ReferencedContainer = "container:MegaApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1206FA1E1DE20B0900675DD7"
+               BuildableName = "MegaAppUITests.xctest"
+               BlueprintName = "MegaAppUITests"
+               ReferencedContainer = "container:MegaApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

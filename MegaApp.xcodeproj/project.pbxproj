@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1206FA221DE20B0900675DD7 /* MegaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1206FA211DE20B0900675DD7 /* MegaAppUITests.swift */; };
+		1206FA2A1DE2127D00675DD7 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1206FA291DE2127D00675DD7 /* SnapshotHelper.swift */; };
 		12E528961DDFA9CB00ACCECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E528951DDFA9CB00ACCECB /* AppDelegate.swift */; };
 		12E528981DDFA9CB00ACCECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E528971DDFA9CB00ACCECB /* ViewController.swift */; };
 		12E5289B1DDFA9CB00ACCECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E528991DDFA9CB00ACCECB /* Main.storyboard */; };
@@ -20,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1206FA241DE20B0900675DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E5288A1DDFA9CB00ACCECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12E528911DDFA9CB00ACCECB;
+			remoteInfo = MegaApp;
+		};
 		12E528B81DDFC5A400ACCECB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 12E5288A1DDFA9CB00ACCECB /* Project object */;
@@ -30,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1206FA1F1DE20B0900675DD7 /* MegaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1206FA211DE20B0900675DD7 /* MegaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaAppUITests.swift; sourceTree = "<group>"; };
+		1206FA231DE20B0900675DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1206FA291DE2127D00675DD7 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		1206FA2F1DE23A6E00675DD7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		1206FA301DE23A6E00675DD7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		12E528921DDFA9CB00ACCECB /* MegaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E528951DDFA9CB00ACCECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12E528971DDFA9CB00ACCECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1206FA1C1DE20B0900675DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12E5288F1DDFA9CB00ACCECB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,11 +87,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1206FA201DE20B0900675DD7 /* MegaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1206FA291DE2127D00675DD7 /* SnapshotHelper.swift */,
+				1206FA211DE20B0900675DD7 /* MegaAppUITests.swift */,
+				1206FA231DE20B0900675DD7 /* Info.plist */,
+			);
+			path = MegaAppUITests;
+			sourceTree = "<group>";
+		};
 		12E528891DDFA9CB00ACCECB = {
 			isa = PBXGroup;
 			children = (
 				12E528941DDFA9CB00ACCECB /* MegaApp */,
 				12E528B41DDFC5A400ACCECB /* MegaAppTests */,
+				1206FA201DE20B0900675DD7 /* MegaAppUITests */,
 				12E528931DDFA9CB00ACCECB /* Products */,
 				12E528AC1DDFB37C00ACCECB /* Frameworks */,
 			);
@@ -80,6 +113,7 @@
 			children = (
 				12E528921DDFA9CB00ACCECB /* MegaApp.app */,
 				12E528B31DDFC5A400ACCECB /* MegaAppTests.xctest */,
+				1206FA1F1DE20B0900675DD7 /* MegaAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +162,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1206FA1E1DE20B0900675DD7 /* MegaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1206FA261DE20B0900675DD7 /* Build configuration list for PBXNativeTarget "MegaAppUITests" */;
+			buildPhases = (
+				1206FA1B1DE20B0900675DD7 /* Sources */,
+				1206FA1C1DE20B0900675DD7 /* Frameworks */,
+				1206FA1D1DE20B0900675DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1206FA251DE20B0900675DD7 /* PBXTargetDependency */,
+			);
+			name = MegaAppUITests;
+			productName = MegaAppUITests;
+			productReference = 1206FA1F1DE20B0900675DD7 /* MegaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		12E528911DDFA9CB00ACCECB /* MegaApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12E528A41DDFA9CB00ACCECB /* Build configuration list for PBXNativeTarget "MegaApp" */;
@@ -173,6 +225,12 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Michael Kilian";
 				TargetAttributes = {
+					1206FA1E1DE20B0900675DD7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SGFJR697SR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 12E528911DDFA9CB00ACCECB;
+					};
 					12E528911DDFA9CB00ACCECB = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = SGFJR697SR;
@@ -201,11 +259,19 @@
 			targets = (
 				12E528911DDFA9CB00ACCECB /* MegaApp */,
 				12E528B21DDFC5A400ACCECB /* MegaAppTests */,
+				1206FA1E1DE20B0900675DD7 /* MegaAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1206FA1D1DE20B0900675DD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12E528901DDFA9CB00ACCECB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +294,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1206FA1B1DE20B0900675DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1206FA221DE20B0900675DD7 /* MegaAppUITests.swift in Sources */,
+				1206FA2A1DE2127D00675DD7 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12E5288E1DDFA9CB00ACCECB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +324,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1206FA251DE20B0900675DD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12E528911DDFA9CB00ACCECB /* MegaApp */;
+			targetProxy = 1206FA241DE20B0900675DD7 /* PBXContainerItemProxy */;
+		};
 		12E528B91DDFC5A400ACCECB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 12E528911DDFA9CB00ACCECB /* MegaApp */;
@@ -261,6 +341,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				12E5289A1DDFA9CB00ACCECB /* Base */,
+				1206FA2F1DE23A6E00675DD7 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -269,6 +350,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				12E5289F1DDFA9CB00ACCECB /* Base */,
+				1206FA301DE23A6E00675DD7 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -276,10 +358,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1206FA271DE20B0900675DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SGFJR697SR;
+				INFOPLIST_FILE = MegaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.MegaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MegaApp;
+			};
+			name = Debug;
+		};
+		1206FA281DE20B0900675DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SGFJR697SR;
+				INFOPLIST_FILE = MegaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.MegaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MegaApp;
+			};
+			name = Release;
+		};
 		12E528A21DDFA9CB00ACCECB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -329,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -424,6 +534,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1206FA261DE20B0900675DD7 /* Build configuration list for PBXNativeTarget "MegaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1206FA271DE20B0900675DD7 /* Debug */,
+				1206FA281DE20B0900675DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		12E5288D1DDFA9CB00ACCECB /* Build configuration list for PBXProject "MegaApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

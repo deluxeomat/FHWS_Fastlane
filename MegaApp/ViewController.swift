@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     func getRotationAnimation() -> CABasicAnimation {
         let rotation = CABasicAnimation(keyPath: "transform.rotation")
         rotation.fromValue = 0.0
-        rotation.toValue = myPi
+        rotation.toValue = self.myPi
         rotation.duration = 1.5
         
         return rotation

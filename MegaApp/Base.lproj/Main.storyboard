@@ -21,13 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Yl-RY-Ipy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Yl-RY-Ipy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruw-Fz-4DF">
-                                <rect key="frame" x="52" y="492" width="270" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="52" y="490" width="270" height="73"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.4392156862745098" green="0.19215686274509805" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Push me">
@@ -38,11 +37,19 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MegaApp.png" translatesAutoresizingMaskIntoConstraints="NO" id="N3g-vh-fAQ">
-                                <rect key="frame" x="107" y="215" width="160" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="108" y="216" width="160" height="64"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Yl-RY-Ipy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="56n-kl-Czp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Yl-RY-Ipy" secondAttribute="bottom" id="LDX-cG-NdK"/>
+                            <constraint firstAttribute="trailing" secondItem="0Yl-RY-Ipy" secondAttribute="trailing" id="Ruf-pu-FSB"/>
+                            <constraint firstItem="0Yl-RY-Ipy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rXc-eS-dWh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Yl-RY-Ipy" secondAttribute="bottom" id="sf8-Xm-uyK"/>
+                            <constraint firstAttribute="trailing" secondItem="0Yl-RY-Ipy" secondAttribute="trailing" id="tGS-fL-Zh1"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="ruw-Fz-4DF" id="TcT-BM-XKk"/>
