@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='MegaAppUITests.xctest' tests='3' failures='0'>
+  <testsuite name='MegaAppTests.MegaAppTests' tests='2' failures='0'>
+    <testcase classname='MegaAppTests.MegaAppTests' name='testExample' time='0.025'/>
+    <testcase classname='MegaAppTests.MegaAppTests' name='testPerformanceExample' time='0.265'/>
+  </testsuite>
+  <testsuite name='MegaAppUITests.MegaAppUITests' tests='1' failures='0'>
+    <testcase classname='MegaAppUITests.MegaAppUITests' name='testExample' time='6.621'/>
+  </testsuite>
+</testsuites>
